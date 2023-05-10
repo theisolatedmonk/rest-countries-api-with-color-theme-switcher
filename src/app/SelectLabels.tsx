@@ -25,9 +25,11 @@ export default function SelectLabels() {
           <MenuItem value="">
             <em>Filter by Region</em>
           </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={""}>Africa</MenuItem>
+          <MenuItem value={""}>America</MenuItem>
+          <MenuItem value={""}>Asia</MenuItem>
+          <MenuItem value={""}>Europe</MenuItem>
+          <MenuItem value={""}>Oceania</MenuItem>
         </Select>
         <FormHelperText></FormHelperText>
       </FormControl>
