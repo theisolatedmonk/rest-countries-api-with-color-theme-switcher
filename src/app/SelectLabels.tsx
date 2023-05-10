@@ -16,7 +16,7 @@ export default function SelectLabels() {
     <div>
      
       <FormControl sx={{ m: 1, minWidth: 180, }}>
-        <Select sx={{ m: 1, height:40 }}
+        <Select sx={{ m: 1, height:40, color: 'white'}}
           value={age}
           onChange={handleChange}
           displayEmpty

@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col h-64 w-52 rounded-md  shadow-lg overflow-hidden ">
           <div className=" h-32 w-full bg-green-300"></div>
-          <div className="flex flex-col p-4">
+          <div className="flex flex-col dark:text-[hsl(0,0%,100%)] p-4">
             <p className="text-lg font-bold">Germany</p>
             <div className="text-sm ">
               <p className="">
