@@ -21,27 +21,33 @@ export default function Home() {
     <div>
       {" "}
       <div>
-        <main className="flex min-h-screen flex-col items-center gap-4  font-Nunito dark:bg-[#202c37]">
+        <main className="flex min-h-screen flex-col items-center gap-4 px-12 font-Nunito dark:bg-[#202c37]">
           {/* Header */}
 
-          <div className="flex px-12 flex-col w-full  ">
+          <div className="flex  flex-col w-full  ">
             {/*  */}
             <ConuntrySearchAndFilter />
-            <section className="flex gap-2 flex-wrap justify-between">
+            <section className="flex gap-4 gap-y-10 flex-wrap justify-between ">
               {data.map((item) => (
                 <Link
                   href={`/country/${item.alpha3Code}`}
                   key={item.name}
-                  className="flex flex-col h-64 w-52 rounded-md  shadow-lg overflow-hidden border-2 "
+                  className="flex flex-col h-72 w-56 rounded-md  shadow-lg overflow-hidden "
                 >
-                  <div className=" h-32 w-full ">
-                    <Image
+                  <div className=" h-36 w-full ">
+                  <img
+            // alt={data[0].name}
+            src={item.flag}
+                      alt={item.name}
+            className="h-full w-full object-cover"
+            // src={data[0].flags.svg}
+          />
+                    {/* <Image
                       width={208}
                       height={128}
-                      src={item.flag}
-                      alt={item.name}
+                      
                       className="h-full w-full"
-                    />
+                    /> */}
                   </div>
                   <div className="flex flex-col dark:text-[hsl(0,0%,100%)] p-4">
                     <p className="text-lg font-bold">{item.name}</p>

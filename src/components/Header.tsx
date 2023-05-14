@@ -1,7 +1,7 @@
 export function Header() {
   return (
-    <div className="flex  justify-between w-full p-2  shadow-lg items-center    rounded-sm dark:bg-[hsl(209,23%,22%)] dark:text-[hsl(0,0%,100%)] top-0 sticky bg-white">
-      <p>Where in the world?</p>
+    <div className="flex  justify-between w-full py-2 px-12  shadow-lg items-center    rounded-sm dark:bg-[hsl(209,23%,22%)] dark:text-[hsl(0,0%,100%)] top-0 sticky bg-white">
+      <p className="text-lg font-bold">Where in the world?</p>
       <div className="flex items-center gap-2">
         <button
           id="theme-toggle"
@@ -31,7 +31,7 @@ export function Header() {
             ></path>
           </svg>
         </button>
-        <p>Dark Mode</p>
+        <p className="text-sm">Dark Mode</p>
       </div>
     </div>
   );
