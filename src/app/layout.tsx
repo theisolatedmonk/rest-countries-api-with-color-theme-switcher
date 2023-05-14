@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -21,7 +22,10 @@ export default function RootLayout({
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
         rel="stylesheet"
       ></link>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
