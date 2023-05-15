@@ -36,7 +36,12 @@ export default function Country(props: CountryPageType) {
 
   return (
     <div className=" p-12">
-      <Link href={"/"} className="mb-8 block shadow-[rgba(0,0,0,0.3)_0px_5px_15px] w-16 text-center rounded-md  p-1">Back</Link>
+      <Link
+        href={"/"}
+        className="mb-8 block shadow-[rgba(0,0,0,0.3)_0px_5px_15px] w-16 text-center rounded-md  p-1"
+      >
+        Back
+      </Link>
       <div className="flex text-[16px] justify-center gap-32  w-full items-center">
         <div className="h-72 w-[50%] bg-gray-100 shadow-sm">
           <img
@@ -52,15 +57,30 @@ export default function Country(props: CountryPageType) {
             </div>
             <div className="flex justify-between gap-4">
               <div className="flex flex-col text-[16px] ">
-                <LableValue lable={"Nativ Name"} value={`${data[0].nativeName}`} />
-                <LableValue lable={"Population"} value={`${data[0].population}`} />
+                <LableValue
+                  lable={"Nativ Name"}
+                  value={`${data[0].nativeName}`}
+                />
+                <LableValue
+                  lable={"Population"}
+                  value={`${data[0].population}`}
+                />
                 <LableValue lable={"Region"} value={`${data[0].region}`} />
-                <LableValue lable={"Sub Region"} value={`${data[0].subregion}`} />
+                <LableValue
+                  lable={"Sub Region"}
+                  value={`${data[0].subregion}`}
+                />
                 <LableValue lable={"Capital"} value={`${data[0].capital}`} />
               </div>
               <div className="flex flex-col">
-                <LableValue lable={"Top Level Domain"} value={`${data[0].topLevelDomain}`} />
-                <LableValue lable={"Currencies"} value={`${data[0].currencies}`} />
+                <LableValue
+                  lable={"Top Level Domain"}
+                  value={`${data[0].topLevelDomain}`}
+                />
+                <LableValue
+                  lable={"Currencies"}
+                  value={`${data[0].currencies?.map((d) => d.name)}`}
+                />
                 {/* <LableValue lable={"Region"} value={"Dutch, French, German"} /> */}
                 {/* <LableValue lable={"Region"} value={data[0].region} /> */}
                 <LableValue
