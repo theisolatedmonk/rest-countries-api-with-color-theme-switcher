@@ -9,22 +9,12 @@ import SearchBar from "@/components/SearchBar";
 import Data from "@/components/Data";
 
 export default function Home() {
-
-
   return (
-    <div>
-      {" "}
-      <div>
-        <main className="flex min-h-screen flex-col items-center gap-4 px-12 font-Nunito dark:bg-[#202c37]">
-          {/* Header */}
-
-          <div className="flex  flex-col w-full  ">
-            {/*  */}
-            <SearchBar />
-            <Data />
-          </div>
-        </main>
+    <main className="flex min-h-screen flex-col items-center gap-4 px-12 font-Nunito dark:bg-[#202c37]">
+      <div className="flex  flex-col w-full  ">
+        <SearchBar />
+        <Data />
       </div>
-    </div>
+    </main>
   );
 }
