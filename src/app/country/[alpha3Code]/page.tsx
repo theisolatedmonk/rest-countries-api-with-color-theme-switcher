@@ -81,8 +81,7 @@ export default function Country(props: CountryPageType) {
                   lable={"Currencies"}
                   value={`${data[0].currencies?.map((d) => d.name)}`}
                 />
-                {/* <LableValue lable={"Region"} value={"Dutch, French, German"} /> */}
-                {/* <LableValue lable={"Region"} value={data[0].region} /> */}
+
                 <LableValue
                   lable={"Region"}
                   value={data[0].regionalBlocs?.map(
