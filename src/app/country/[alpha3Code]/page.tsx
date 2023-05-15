@@ -88,11 +88,6 @@ export default function Country(props: CountryPageType) {
                     (r, i, arr) => r.name + (!(i === arr.length - 1) && ", ")
                   )}
                 />
-                {/* {data[0].regionalBlocs?.map((r, i) => r.name + ",")} */}
-                {/* <div className="">
-            <span className="font-light mi text ">Languages:</span>
-            <span className='"text-slate-600 font-light'>Dutch, French, German</span>
-          </div> */}
               </div>
             </div>
           </div>
