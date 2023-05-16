@@ -43,7 +43,7 @@ export default function Country(props: CountryPageType) {
         Back
       </Link>
       <div className="flex flex-col text-[16px] justify-center gap-10  sm:justify-between  w-full  sm:flex-row ">
-        <div className="h-80  sm:w-[50%] bg-gray-100 shadow-sm">
+        <div className="h-80  sm:w-[50%] bg-gray-100 ">
           <img
             alt={data[0].name}
             className="h-full w-full object-cover"
