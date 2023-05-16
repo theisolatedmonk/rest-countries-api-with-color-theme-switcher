@@ -26,3 +26,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+
+/* .Mui-focused {
+    @apply !border-2 !border-red-600;
+} */

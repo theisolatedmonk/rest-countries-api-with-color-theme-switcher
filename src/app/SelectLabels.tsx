@@ -5,21 +5,31 @@ import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { atom, useAtom } from "jotai";
+import { useTheme } from "next-themes";
 
 export const regionAtom = atom("");
 export default function SelectLabels() {
   const [region, setRegion] = useAtom(regionAtom);
-  // const [query, setQuery] = useAtom(queryAtom);
+  const { resolvedTheme } = useTheme();
+
   const handleChange = (event: SelectChangeEvent) => {
     setRegion(event.target.value);
-    
+   
   };
 
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: 180 }}>
         <Select
-          sx={{ m: 1, height: 40 }}
+          // sx={{ m: 1, height: 40 }}
+          sx={{
+            m: 1,
+            height: 40, '&:focus': {
+            borderColor: '#000000', outline: 'none'// Set focus border color to black
+          },
+
+            color: resolvedTheme === 'dark' ? 'white' : 'inherit', // Set text color to white in dark mode
+          }}
           value={region}
           onChange={handleChange}
           displayEmpty
