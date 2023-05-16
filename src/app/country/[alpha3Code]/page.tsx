@@ -35,27 +35,27 @@ export default function Country(props: CountryPageType) {
   );
 
   return (
-    <div className=" p-12">
+    <div className=" p-12 flex flex-col min-h-screen  items-start dark:bg-[#202c37]">
       <Link
         href={"/"}
         className="mb-8 block shadow-[rgba(0,0,0,0.3)_0px_5px_15px] w-16 text-center rounded-md  p-1"
       >
         Back
       </Link>
-      <div className="flex text-[16px] justify-center gap-32  w-full items-center">
-        <div className="h-72 w-[50%] bg-gray-100 shadow-sm">
+      <div className="flex flex-col text-[16px] justify-center gap-10 p-4 sm:gap-32  w-full items-center sm:flex-row ">
+        <div className="h-72  sm:w-[50%] bg-gray-100 shadow-sm">
           <img
             alt={data[0].name}
             className="h-full w-full object-cover"
             src={data[0].flags.svg}
           />
         </div>
-        <div className="flex flex-col justify-between h-72 w-[50%] p-6">
+        <div className="flex flex-col justify-between h-72 sm:w-[50%] p-6 w-full ">
           <div className="fle flex-col">
             <div className="flex font-bold text-[24px] dark:text-[hsl(0,0%,100%)]">
               {data[0].name}
             </div>
-            <div className="flex justify-between gap-4">
+            <div className="flex flex-col sm:flex-row justify-between gap-4">
               <div className="flex flex-col text-[16px] ">
                 <LableValue
                   lable={"Nativ Name"}
@@ -92,7 +92,7 @@ export default function Country(props: CountryPageType) {
             </div>
           </div>
 
-          <div className="flex gap-5">
+          <div className="flex flex-col sm:flex-row gap-5">
             <p className="text-black text-[16px] font-semibold dark:text-[hsl(0,0%,100%)]">
               Border Countries:
             </p>

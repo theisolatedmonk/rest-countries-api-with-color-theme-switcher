@@ -19,7 +19,7 @@ export default function SelectLabels() {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 180 }}>
+      <FormControl sx={{ m: 1, minWidth: 200 }}>
         <Select
           // sx={{ m: 1, height: 40 }}
           sx={{

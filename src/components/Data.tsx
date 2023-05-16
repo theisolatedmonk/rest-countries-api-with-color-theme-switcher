@@ -21,7 +21,7 @@ export default function Data(props: Props) {
     );
 
   return (
-    <section className="flex sm:gap-4 gap-y-10 flex-col  items-center sm:flex-wrap sm:flex-row ">
+    <section className="flex sm:gap-20 gap-y-10 flex-col  items-center justify-center sm:flex-wrap sm:flex-row ">
       {/* {data.map((item) => ( */}
       {/* {filterData.map((item) => ( */}
       {filterData.map((item) => (

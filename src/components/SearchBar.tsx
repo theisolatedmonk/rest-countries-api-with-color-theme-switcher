@@ -13,8 +13,8 @@ export default function SearchBar({}: Props) {
 
   console.log(query);
   return (
-    <div className="flex justify-center flex-col sm:justify-between  items-center w-full sm: group-focus:to-blue-400 sm:flex-row">
-      <div className="  w-96  shadow-lg flex items-center p-2 h-10 ring-[.5px] ring-gray-400 rounded-md gap-1 dark:bg-[hsl(209,23%,22%)] hover:ring-black focus:blue-400 dark:ring-[hsl(209,23%,22%)]">
+    <div className="flex justify-center flex-col sm:justify-between  sm:items-center w-full sm:group-focus:to-blue-400 sm:flex-row">
+      <div className="  w-[100%] sm:w-96  shadow-lg flex items-center p-2 h-10 ring-[.5px] ring-gray-400 rounded-md gap-1 dark:bg-[hsl(209,23%,22%)] hover:ring-black focus:blue-400 dark:ring-[hsl(209,23%,22%)]">
         <Image
           className="h-5 w-5 top-3 left-4 bg-transparent  z-10 "
           src={search}
