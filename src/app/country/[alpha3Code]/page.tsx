@@ -97,8 +97,9 @@ export default function Country(props: CountryPageType) {
               Border Countries:
             </p>
             <div className="text-slate-600 flex flex-wrap  place-items-center gap-2 dark:text-[hsl(0,0%,100%)]">
-              {data[0].borders?.map((d) => (
+              {data[0].borders?.map((d: string, index: number) => (
                 <Link
+                  key={index}
                   href={`/country/${d}`}
                   className=" w-fit  text-xs rounded-sm  px-4 text-center p-1 shadow-[rgba(0,0,0,0.3)_0px_5px_15px] "
                 >
