@@ -10,7 +10,7 @@ type LableValueType = {
 function LableValue(Props: LableValueType) {
   return (
     <div className=" ">
-      <span className="text-[16px] font-semibold dark:text-[hsl(0,0%,100%)]">
+      <span className="text-[16px] font-bold dark:text-[hsl(0,0%,100%)]">
         {Props.lable}:{" "}
       </span>
       <span className="text-[16px] font-light text-slate-600 dark:text-[hsl(0,0%,100%)]">
@@ -42,8 +42,8 @@ export default function Country(props: CountryPageType) {
       >
         Back
       </Link>
-      <div className="flex flex-col text-[16px] justify-center gap-10 p-4 sm:gap-32  w-full items-center sm:flex-row ">
-        <div className="h-72  sm:w-[50%] bg-gray-100 shadow-sm">
+      <div className="flex flex-col text-[16px] justify-center gap-10 p-4 sm:justify-between  w-full  sm:flex-row ">
+        <div className="h-96  sm:w-[50%] bg-gray-100 shadow-sm">
           <img
             alt={data[0].name}
             className="h-full w-full object-cover"
@@ -56,7 +56,7 @@ export default function Country(props: CountryPageType) {
               {data[0].name}
             </div>
             <div className="flex flex-col sm:flex-row justify-between gap-4">
-              <div className="flex flex-col text-[16px] ">
+              <div className="flex flex-col text-lg">
                 <LableValue
                   lable={"Nativ Name"}
                   value={`${data[0].nativeName}`}
@@ -72,7 +72,7 @@ export default function Country(props: CountryPageType) {
                 />
                 <LableValue lable={"Capital"} value={`${data[0].capital}`} />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col text-lg">
                 <LableValue
                   lable={"Top Level Domain"}
                   value={`${data[0].topLevelDomain}`}
@@ -93,7 +93,7 @@ export default function Country(props: CountryPageType) {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-5">
-            <p className="text-black text-[16px] font-semibold dark:text-[hsl(0,0%,100%)]">
+            <p className="text-black text-lg font-bold dark:text-[hsl(0,0%,100%)]">
               Border Countries:
             </p>
             <div className="text-slate-600 flex flex-wrap  place-items-center gap-2 dark:text-[hsl(0,0%,100%)]">
