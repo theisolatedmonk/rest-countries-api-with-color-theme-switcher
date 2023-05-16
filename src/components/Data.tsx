@@ -30,7 +30,7 @@ export default function Data(props: Props) {
           key={item.name}
           className="flex flex-col h-80 w-56 rounded-md  shadow-lg overflow-hidden "
         >
-          <div className=" h-32 w-full shadow-md">
+          <div className=" h-32 w-full ">
             <img
               src={item.flag}
               alt={item.name}
@@ -38,7 +38,7 @@ export default function Data(props: Props) {
             />
           </div>
           <div className="flex flex-col gap-2 dark:text-[hsl(0,0%,100%)] p-4">
-            <p className="text-xl font-bold">{item.name}</p>
+            <p className="text-[24px] font-bold">{item.name}</p>
             <div className="text-lg ">
               <p className="">
                 <span className="font-bold">Population: </span>
