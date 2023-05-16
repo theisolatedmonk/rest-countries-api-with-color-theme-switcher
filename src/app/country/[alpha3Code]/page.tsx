@@ -42,8 +42,8 @@ export default function Country(props: CountryPageType) {
       >
         Back
       </Link>
-      <div className="flex flex-col text-[16px] justify-center gap-10 p-4 sm:justify-between  w-full  sm:flex-row ">
-        <div className="h-96  sm:w-[50%] bg-gray-100 shadow-sm">
+      <div className="flex flex-col text-[16px] justify-center gap-10  sm:justify-between  w-full  sm:flex-row ">
+        <div className="h-80  sm:w-[50%] bg-gray-100 shadow-sm">
           <img
             alt={data[0].name}
             className="h-full w-full object-cover"
@@ -55,8 +55,8 @@ export default function Country(props: CountryPageType) {
             <div className="flex font-bold text-[24px] dark:text-[hsl(0,0%,100%)]">
               {data[0].name}
             </div>
-            <div className="flex flex-col sm:flex-row justify-between gap-4">
-              <div className="flex flex-col text-lg">
+            <div className="flex flex-col sm:flex-row justify-between items-center ">
+              <div className="flex flex-col text-lg sm:w-[50%]">
                 <LableValue
                   lable={"Nativ Name"}
                   value={`${data[0].nativeName}`}
@@ -72,7 +72,7 @@ export default function Country(props: CountryPageType) {
                 />
                 <LableValue lable={"Capital"} value={`${data[0].capital}`} />
               </div>
-              <div className="flex flex-col text-lg">
+              <div className="flex flex-col text-lg sm:w-[50%]">
                 <LableValue
                   lable={"Top Level Domain"}
                   value={`${data[0].topLevelDomain}`}
@@ -93,7 +93,7 @@ export default function Country(props: CountryPageType) {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-5">
-            <p className="text-black text-lg font-bold dark:text-[hsl(0,0%,100%)]">
+            <p className="text-black text-lg font-bold dark:text-[hsl(0,0%,100%)] sm:w-[40%]">
               Border Countries:
             </p>
             <div className="text-slate-600 flex flex-wrap  place-items-center gap-2 dark:text-[hsl(0,0%,100%)]">
